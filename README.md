@@ -16,31 +16,36 @@ To run the code locally, follow these steps:
    cd flower-classification
 2. Install the required dependencies using pip:
        pip install -r requirements.txt
-   3. Run the main script:
+ 3. Run the main script:
       python main.py
-Code Structure
+## Code Structure
 - `main.py`: Main script to load and preprocess the Fashion MNIST dataset, define the model architecture, train the model, and evaluate its performance.
 - `utils.py`: Utility functions for data loading, preprocessing, and plotting.
 - `requirements.txt`: List of Python dependencies required to run the project.
 
-Model Architecture
-The model architecture consists of the following layers:
+## Model Architecture
+
+ The model architecture consists of the following layers:
 
 - VGG16 Base Model (pre-trained on ImageNet)
 - Flatten Layer
 - Dense Layer with ReLU activation
 - Output Dense Layer with Softmax activation (5 classes)
-Training
-The model is trained using the Adam optimizer and Sparse Categorical Crossentropy loss function. The training process involves 10 epochs with a batch size of 32.
+  
+## Training
 
-Evaluation
+  The model is trained using the Adam optimizer and Sparse Categorical Crossentropy loss function. The training process involves 10 epochs with a batch size of 32.
+
+## Evaluation
+
 The trained model's performance is evaluated on a separate validation dataset, achieving a validation accuracy of approximately 86.65%.
 
-Results
+## Results
 - Training Accuracy: 99.97%
 - Test Accuracy: 86.65%
 
-Conclusion
+## Conclusion
+
 This project demonstrates the effectiveness of transfer learning using pre-trained models like VGG16 for image classification tasks. The trained model performs well in classifying flower images into different categories.
 
 Feel free to experiment with different pre-trained models, optimizers, and hyperparameters to further improve the model's performance.
