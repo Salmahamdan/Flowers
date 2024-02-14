@@ -19,8 +19,7 @@ To run the code locally, follow these steps:
  3. Run the main script:
       python main.py
 ## Code Structure
-- `main.py`: Main script to load and preprocess the Fashion MNIST dataset, define the model architecture, train the model, and evaluate its performance.
-- `utils.py`: Utility functions for data loading, preprocessing, and plotting.
+- `main.py`: Main script to download the dataset, preprocess the images, define the model architecture, train the model, and evaluate its performance.
 - `requirements.txt`: List of Python dependencies required to run the project.
 
 ## Model Architecture
